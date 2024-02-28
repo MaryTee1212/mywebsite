@@ -1,0 +1,178 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  background-image: url(/assets/images/banner.png);
+}
+
+.logo-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 40px;
+  margin-left: 40px;
+  column-gap: 50%;
+}
+.logo-holder img {
+  width: 15%;
+}
+.navbar > ul > li {
+  list-style: none;
+}
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar > ul > li :hover {
+  color: #607d8b;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 50%;
+}
+
+.banner {
+  display: flex;
+  column-gap: 40%;
+}
+.left {
+  margin-left: 60px;
+}
+
+.right {
+  /* margin-right: 70px;*/
+  width: 70%;
+}
+
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 900;
+}
+.other-skill {
+  color: #fff5ff;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times;
+  font-size: larger;
+}
+
+.set {
+  color: #ffffff;
+}
+/* .skills{
+    padding: 10px;
+} */
+.skill-one,
+.skill-two,
+.skill-three {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  padding: 20px;
+  color: #ffffff;
+}
+.skill-one {
+  column-gap: 90px;
+}
+button {
+  padding: 30px 40px;
+  background-color: #607d8b;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  cursor: pointer;
+  list-style-type: none;
+}
+button > a {
+  text-decoration: none;
+  color: #fff5ff;
+  font-size: 15px;
+}
+
+.skill-two {
+  column-gap: 60px;
+}
+.skill-three {
+  column-gap: 72px;
+}
+
+.slack:hover {
+  background-color: black;
+  transition: 0.3s;
+}
+
+#about {
+  background-color: #eff2f9;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+#about > h2 {
+  text-align: center;
+}
+
+#projects {
+  text-align: center;
+  background-color: #607d8b;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  color: black;
+  font-size: 25px;
+}
+#projects > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+footer {
+  background-color: #223a50;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+  .logo-holder {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  .logo-holder img {
+    width: 30%;
+  }
+
+  .navbar > ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .left {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  button {
+    margin-left: 20px;
+  }
+}
